@@ -7,5 +7,5 @@ function App() {
     </div>
   );
 }
-// Triet  
+// Triett
 export default App;
