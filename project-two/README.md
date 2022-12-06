@@ -11,3 +11,4 @@ Stretch Goal: Connection to spotify or some other sort of streaming service to l
 API: https://musicbrainz.org/ws/2/.
 
 Component Hierarchy: https://www.figma.com/file/p2TOTJ4kkc0UDh6pKoesFq/Project-2-%2F-Music-Artist-Info-App?node-id=11%3A2&t=fq43ZRCkK6Z9HtP3-0
+

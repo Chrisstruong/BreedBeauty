@@ -8,5 +8,5 @@ function App() {
   );
   // Triet
 }
-// Triet  
+// Triett
 export default App;
