@@ -1,12 +1,17 @@
 import './App.css';
+import Navbar from './Navbar'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className ="full">
-      < Navbar />
-    </div>
+    <>
+      <header>
+        <p>Test</p>
+        < Navbar />
+      </header>
+      <div className ="main">
+      </div>
+    </>
   );
-  // Triet
 }
-// Triet  
 export default App;
