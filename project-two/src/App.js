@@ -7,6 +7,7 @@ function App() {
       <ArtistList />
     </>
   );
+  // Triet
 }
 
 export default App;
