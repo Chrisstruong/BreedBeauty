@@ -1,11 +1,12 @@
 import './App.css';
+import ArtistList from './Components/ArtistList';
 
 function App() {
   return (
-    <div>
-      Test
-    </div>
+    <>
+      <ArtistList />
+    </>
   );
 }
-// Triettt
+
 export default App;
