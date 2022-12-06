@@ -1,7 +1,8 @@
 import './styles/App.css';
 import ArtistList from './Components/ArtistList';
-import Navbar from './Components/Navbar'
-import { Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar';
+import ArtistOfDay from './Components/ArtistofDay';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
     <header>
        <Navbar />
     </header>
-    <body>
-    </body>
+    <main>
+      <ArtistOfDay />
+    </main>
     <footer>
     </footer>
   </>

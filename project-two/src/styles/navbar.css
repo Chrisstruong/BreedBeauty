@@ -4,7 +4,9 @@
     justify-content: space-around;
     gap: 10px;
     padding-bottom: 20px;
-    border-bottom: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    background-color: rgba(190, 44, 44, 0.315);
 }
 
 .logo {
@@ -18,16 +20,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(5, 5, 5);
-    border-radius: 10px;
     padding: 20px;
-    padding-top: 0px;
+    margin-top: 15px;
+    color: aqua;
+}
+
+.random {
+    display: flex;
 }
 
 #button-random {
-    background-color:rgb(38, 228, 228);
-    padding: 30px;
-    border-radius: 10px;
+    background-color:rgb(227, 194, 170);
+    padding: 20px;
+    border-radius: 8px;
     margin: 10px;
-    color:rgb(2, 52, 52)
+    color:rgb(2, 52, 52);
+    font-weight: 900px;
+    font-size:larger;
 }
