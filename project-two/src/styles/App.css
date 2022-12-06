@@ -1,3 +1,9 @@
 body {
-    background-color: rgb(219, 77, 84);
+    background-color: rgb(201, 181, 99);
+    padding: 20px;
+}
+
+main {
+   background-color: rgba(138, 112, 112, 0.753);
+   border-radius: 3px;
 }
