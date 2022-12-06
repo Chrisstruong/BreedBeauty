@@ -9,6 +9,10 @@ function App() {
     <header>
        <Navbar />
     </header>
+    <body>
+    </body>
+    <footer>
+    </footer>
   </>
   );
 }
