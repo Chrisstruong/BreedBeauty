@@ -5,10 +5,11 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      Test
-    </div>
+  <>
+    <header>
+       <Navbar />
+    </header>
+  </>
   );
 }
-// Triet  
 export default App;
