@@ -1,0 +1,33 @@
+.full-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(38, 228, 228);
+}
+
+.search-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#button-random {
+    background-color:rgb(38, 228, 228);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    color:rgb(2, 52, 52)
+}
