@@ -8,6 +8,7 @@ function App() {
   <>
     <header>
        <Navbar />
+       <ArtistList />
     </header>
     <body>
     </body>
