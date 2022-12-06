@@ -1,6 +1,6 @@
-import './App.css';
+import './styles/App.css';
 import ArtistList from './Components/ArtistList';
-import Navbar from './Navbar'
+import Navbar from './Components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
