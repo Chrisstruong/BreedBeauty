@@ -1,9 +1,11 @@
+import './navbar.css';
 
 function Navbar () {
     return (
         <>     
          <div className="full-nav">
             <div className="logo">
+                <h1>Artist Info App</h1>
             </div>
             <div className = "search-context">
                 <h4>Search for any artist here:</h4>
@@ -12,12 +14,12 @@ function Navbar () {
                         <input type="text"
                         placeholder=" Sweet Sweet Music"
                         name= "search"/>
-                        <button class="button">Enter</button>
+                        <button id="button-search">Enter</button>
                     </form>
                 </div>
             </div>
             <div className= "link">
-                <h1>Click me for a Random Artist?</h1>
+                <button id="button-random">Randomize Artist</button>
             </div>
         </div>
         </>
