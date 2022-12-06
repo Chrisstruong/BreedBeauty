@@ -9,8 +9,8 @@ function App() {
     <header>
        <Navbar />
     </header>
-    <body>
-    </body>
+    <main>
+    </main>
     <footer>
     </footer>
   </>
