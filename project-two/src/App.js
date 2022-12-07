@@ -1,5 +1,5 @@
 import './styles/App.css';
-import ArtistList from './Components/ArtistList';
+import DogList from './Components/DogList'
 import Navbar from './Components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ function App() {
   <>
     <header>
        <Navbar />
-       <ArtistList />
+       <DogList />
     </header>
     <body>
     </body>
