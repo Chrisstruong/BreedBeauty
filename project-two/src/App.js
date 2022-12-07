@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 
 import ArtistOfDay from './Components/RandomDog';
 import { Routes, Route } from 'react-router-dom';
+import RandomDog from './Components/RandomDog';
 
 
 
@@ -15,7 +16,10 @@ function App() {
        <DogList />
     </header>
     <main>
-      <ArtistOfDay />
+      <Routes>
+        <Route path="/" element={ <RandomDog /> } />
+        <Route path="/dogs/:number" element={ <DogList /> } />
+      </Routes>
     </main>
     <footer>
     </footer>
