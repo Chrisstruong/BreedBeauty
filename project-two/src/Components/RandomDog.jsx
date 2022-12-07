@@ -1,4 +1,4 @@
-import '../styles/RandomDog.css'
+import '../styles/DogList.css'
 
 function RandomDog (props) {
     return (

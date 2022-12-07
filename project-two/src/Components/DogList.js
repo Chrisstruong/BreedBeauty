@@ -1,5 +1,5 @@
 import { useEffect, useState, useParams } from 'react'
-import '../styles/RandomDog.css'
+import '../styles/DogList.css'
 
 function DogList (props) {
     const [dogs, setDogs] = useState(null)
@@ -29,10 +29,15 @@ function DogList (props) {
 
 
     return (
-        <div>
+        <div className="dog-container">
             {dogs ? <>
+            <div className="dog-container">
                 <img className='photo-box' src={dogs[randomNum]} alt=""/>
-            </> : <p>Loading dog...</p>  }
+            </div>
+            <div className="button">
+            <button onClick={fetchDogList}>New!</button>
+            </div>
+            </> : <p>Loading dog...</p> }
         </div>
     )
 
