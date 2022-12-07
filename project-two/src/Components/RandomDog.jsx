@@ -5,7 +5,7 @@ function RandomDog (props) {
         <>
             <div className="dog-container">
                 <div className="photo-box">
-                    <p>hey buddy!</p>
+                    <p></p>
                 </div>
             </div>
         </>
