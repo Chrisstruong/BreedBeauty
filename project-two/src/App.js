@@ -16,7 +16,7 @@ function App() {
        <DogList />
     </header>
     <main>
-      <Routes>
+    <Routes>
         <Route path="/" element={ <RandomDog /> } />
         <Route path="/dogs/:number" element={ <DogList /> } />
       </Routes>
