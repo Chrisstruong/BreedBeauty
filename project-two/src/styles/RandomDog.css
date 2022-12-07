@@ -1,4 +1,4 @@
-.day-container{
+.dog-container{
     text-align: center;
 }
 
@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.artist-title {
+.dog-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
     border-radius: 10px;
 }
 
-.artist-info {
+.dog-info {
     display: flex;
     justify-content: center;
     align-items: center;

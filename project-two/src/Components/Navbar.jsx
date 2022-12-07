@@ -5,10 +5,10 @@ function Navbar () {
         <>     
          <div className="full-nav">
             <div className="logo">
-                <h1>Artist Info App</h1>
+                <h1>Cute Pupps! </h1>
             </div>
             <div className = "search-context">
-                <h4>Search for any artist here:</h4>
+                <h4>Search for any dog here:</h4>
                 <div className = "search">
                     <form action="#">
                         <input type="text"
@@ -19,7 +19,7 @@ function Navbar () {
                 </div>
             </div>
             <div className= "random">
-                <button id="button-random">RANDOM</button>
+                <button id="button-random">RANDOM PUPPER</button>
             </div>
         </div>
         </>
