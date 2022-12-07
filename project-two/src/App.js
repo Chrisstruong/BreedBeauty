@@ -1,10 +1,11 @@
 import './styles/App.css';
-import DogList from './Components/DogList'
-import Navbar from './Components/Navbar'
-
-import ArtistOfDay from './Components/RandomDog';
 import { Routes, Route } from 'react-router-dom';
+
+import DogDetails from './Components/DogDetails'
+import Navbar from './Components/Navbar'
+import ArtistOfDay from './Components/RandomDog';
 import RandomDog from './Components/RandomDog';
+import DogList from './Components/DogList';
 
 
 
@@ -14,11 +15,12 @@ function App() {
     <header>
        <Navbar />
        <DogList />
+       {/* <DogDetails /> */}
     </header>
     <main>
     <Routes>
         <Route path="/" element={ <RandomDog /> } />
-        <Route path="/dogs/:number" element={ <DogList /> } />
+        <Route path="/dogs/:nameDog" element={ <DogDetails /> } />
       </Routes>
     </main>
     <footer>
