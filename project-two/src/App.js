@@ -13,9 +13,13 @@ function App() {
   <>
     <header>
        <Navbar />
+       <DogList />
     </header>
     <main>
-      <ArtistOfDay />
+    <Routes>
+        <Route path="/" element={ <RandomDog /> } />
+        <Route path="/dogs/:number" element={ <DogList /> } />
+      </Routes>
     </main>
     <footer>
     </footer>
