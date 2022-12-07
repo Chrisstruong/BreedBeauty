@@ -1,9 +1,13 @@
+button {
+    margin: 0;
+}
 .full-nav {
     width: 100%;
+    height: 30px;
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    padding-bottom: 20px;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding-bottom: 5px;
     border: 2px solid rgba(0, 0, 0, 0.12);
     border-radius: 5px;
     background-color: rgba(190, 44, 44, 0.315);
@@ -17,24 +21,76 @@
 
 .search-context {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-top: 15px;
+    padding: 2px;
+    margin-top: 5px;
     color: aqua;
 }
-
-.random {
-    display: flex;
-}
-
 #button-random {
+    display: flex;
+    align-items: center;
+    height: 10px;
     background-color:rgb(227, 194, 170);
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    margin: 10px;
+    margin: 5px;
     color:rgb(2, 52, 52);
     font-weight: 900px;
-    font-size:larger;
+    font-size:medium;
+}
+
+
+
+
+
+@media (max-width: 375px){
+button {
+    margin: 2px;
+    padding: 2px;
+}
+    .full-nav {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding-right: 2px;
+        margin-right: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        background-color: rgba(190, 44, 44, 0.315);
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        color: rgb(38, 228, 228);
+    }
+    
+    .search-context {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        margin-top: 0px;
+        color: aqua;
+    }
+    
+    .random {
+        display: flex;
+    }
+    
+    #button-random {
+        background-color:rgb(227, 194, 170);
+        padding: 25px;
+        border-radius: 8px;
+        margin: 2px;
+        color:rgb(2, 52, 52);
+        font-weight: 900px;
+        font-size:medium;
+    }
+    
+
 }
