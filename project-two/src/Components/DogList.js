@@ -1,5 +1,5 @@
 import { useEffect, useState, useParams } from 'react'
-
+import '../styles/RandomDog.css'
 
 function DogList (props) {
     const [dogs, setDogs] = useState(null)
@@ -31,7 +31,7 @@ function DogList (props) {
     return (
         <div>
             {dogs ? <>
-                <img src={dogs[randomNum]} alt=""/>
+                <img className='photo-box' src={dogs[randomNum]} alt=""/>
             </> : <p>Loading dog...</p>  }
         </div>
     )
