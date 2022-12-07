@@ -1,17 +1,11 @@
 import './styles/App.css';
 import DogList from './Components/DogList'
 import Navbar from './Components/Navbar'
-import { Routes, Route } from 'react-router-dom'
-<<<<<<< Updated upstream
-=======
-=======
-import ArtistList from './Components/ArtistList';
-import Navbar from './Components/Navbar';
+
 import ArtistOfDay from './Components/RandomDog';
-import TestComponent from './Components/TestComponent'
 import { Routes, Route } from 'react-router-dom';
->>>>>>> development
->>>>>>> Stashed changes
+import RandomDog from './Components/RandomDog';
+
 
 
 function App() {
@@ -22,7 +16,10 @@ function App() {
        <DogList />
     </header>
     <main>
-      <ArtistOfDay />
+      <Routes>
+        <Route path="/" element={ <RandomDog /> } />
+        <Route path="/dogs/:number" element={ <DogList /> } />
+      </Routes>
     </main>
     <footer>
     </footer>
