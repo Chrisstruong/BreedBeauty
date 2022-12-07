@@ -9,7 +9,6 @@ function App() {
   <>
     <header>
        <Navbar />
-       <DogList />
     </header>
     <main>
       < RandomDog />

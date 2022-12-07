@@ -4,19 +4,8 @@ function RandomDog (props) {
     return (
         <>
             <div className="dog-container">
-                <div>
-                    <h1>Random Dog</h1>
-                </div>
-                <div className="content">
-                    <div className="dog-title">
-                        <h3>French Bulldog</h3>
-                    </div>
-                    <div className="dog-info">
-                        <h4>« Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »</h4>
-                    </div>
-                </div>
-                <div className="info-links">
-                        <p>links....</p>
+                <div className="photo-box">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.49oAJTN3O0nLWee7ODHETAHaFj%26pid%3DApi&f=1&ipt=9852d61a4fbfd4bfdc3f0619c9e4c94b28beb3fa54c135ea865dbf56004775dd&ipo=images" alt="French BullDog"/>
                 </div>
             </div>
         </>
