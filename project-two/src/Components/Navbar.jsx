@@ -18,8 +18,8 @@ function Navbar () {
                     </form>
                 </div>
             </div>
-            <div className= "link">
-                <button id="button-random">Randomize Artist</button>
+            <div className= "random">
+                <button id="button-random">RANDOM</button>
             </div>
         </div>
         </>
