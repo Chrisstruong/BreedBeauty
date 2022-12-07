@@ -9,6 +9,7 @@ function DogList (props) {
             const response = await fetch(`https://dog.ceo/api/breeds/list/all`)
             const dogNewData = await response.json()
             console.log(dogNewData)
+            setDogs(dogNewData)
         } catch (err) {
             console.log(err)
         }
