@@ -18,7 +18,7 @@ function Navbar () {
                     </form>
                 </div>
                 <div className="logo">
-                <Link to = "./list">Breed List</Link>
+                <Link to = "./ListOfAlpha">Breed List</Link>
                 </div>
             </div>
         </div>
