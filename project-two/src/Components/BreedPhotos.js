@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import '../styles/DogDetails.css'
+import '../styles/BreedPhotos.css'
 
 function BreedPhotos (props) {
     const [dogs, setDogs] = useState(null)
@@ -34,14 +34,17 @@ function BreedPhotos (props) {
 
     return (
         <div className="dog-container">
-            <h1>{nameDog.charAt(0).toUpperCase() + nameDog.slice(1)}</h1>
-            {dogs ? <div className="photo-box">  
-                <img className='photo-box' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
-                <img className='photo-box' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
-                <img className='photo-box' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
-
-                
-            </div> : <p>Loading dog...</p>  }
+            <div className ="breed-header">
+                <h1>{nameDog.charAt(0).toUpperCase() + nameDog.slice(1)}</h1>
+            </div>
+            {dogs ? 
+                <div className="photo-box-breed">  
+                    <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
+                    <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
+                    <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
+                </div> 
+            : <p>Loading dog...</p>  }
+            <button onClick={fetchDogList} id="more">More!</button>
         </div>
     )
 

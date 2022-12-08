@@ -1,0 +1,42 @@
+body {
+    color: rgb(12, 18, 76);
+    font-size: 30px;
+    padding: 0;
+}
+
+h1 {
+    letter-spacing: .1rem;
+}
+
+.dog-container{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    text-align: center;
+    gap: 10px;
+}
+
+.photo-box-breed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.photo-individual {
+    max-width: 40vw;
+    max-height: 20vw;
+    border: 3px solid black;
+}
+
+#more {
+    padding: 10px;
+    max-width: 40vw;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    font-weight: 900px;
+    background-color: rgba(164, 164, 242, 0.572);
+    border-radius: 4px;
+    margin: 0 auto;
+    
+}
