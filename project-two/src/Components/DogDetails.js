@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import '../styles/RandomDog.css'
-
 function DogDetails (props) {
     const [dogs, setDogs] = useState(null)
 
@@ -18,26 +16,22 @@ function DogDetails (props) {
             const response = await fetch(`https://dog.ceo/api/breed/${nameDog}/images`)
             const dogNewData = await response.json()
             console.log(dogNewData)
-            // randomNumInPic = Math.floor(Math.random() * dogNewData.message.length + 1)
-            // console.log(`Value of randomNuminpic is ${randomNumInPic}`)
+            randomNumInPic = Math.floor(Math.random() * dogNewData.message.length + 1)
             setDogs(dogNewData.message)
         } catch (err) {
             console.log(err)
         }
     }
 
-    
-
     useEffect(() => {
         fetchDogList()
     }, [])
-
-
-
     return (
         <div>
             {dogs ? <>
                 <img className='photo-box' src={dogs[0]} alt=""/>
+                <img className='photo-box' src={dogs[1]} alt=""/>
+                <img className='photo-box' src={dogs[2]} alt=""/>
             </> : <p>Loading dog...</p>  }
         </div>
     )
