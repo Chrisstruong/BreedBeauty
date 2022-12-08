@@ -12,14 +12,13 @@ function App() {
   <>
     <header>
        <Navbar />
-       <DogList />
-       {/* <DogDetails /> */}
+       {/* <DogList />
+       <DogDetails /> */}
     </header>
     <main>
     <Routes>
         <Route path="/" element={ <RandomDog /> } />
-        <Route path="/dogs/:nameDog" element={ <DogDetails /> } />
-        <Route path="/list/" element={<DogList />} />
+        <Route path="/list" element={<DogList />} />
         <Route path="/list/:nameDog" element={ <DogDetails /> } />
       </Routes>
     </main>
