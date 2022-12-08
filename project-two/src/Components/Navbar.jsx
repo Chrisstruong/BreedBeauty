@@ -18,6 +18,9 @@ function Navbar () {
                         <button id="button-search">Go Doge</button>
                     </form>
                 </div>
+                <div className="logo">
+                <Link to = "./list">Breed List</Link>
+                </div>
             </div>
         </div>
         </>
