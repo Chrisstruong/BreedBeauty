@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import '../styles/RandomDog.css'
-
 function DogDetails (props) {
     const [dogs, setDogs] = useState(null)
 

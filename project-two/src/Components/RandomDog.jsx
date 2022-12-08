@@ -1,11 +1,11 @@
-import '../styles/RandomDog.css'
+import '../styles/DogList.css'
 
 function RandomDog (props) {
     return (
         <>
             <div className="dog-container">
                 <div className="photo-box">
-                    <p>hey buddy!</p>
+                    <p></p>
                 </div>
             </div>
         </>

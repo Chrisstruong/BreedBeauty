@@ -1,3 +1,4 @@
+
 button {
     margin: 0;
 }
@@ -45,9 +46,10 @@ button {
 
 
 @media (max-width: 375px){
-button {
-    margin: 2px;
-    padding: 2px;
+
+    button {
+        margin: 2px;
+        padding: 2px;
 }
     .full-nav {
         width: 100%;
@@ -91,6 +93,4 @@ button {
         font-weight: 900px;
         font-size:medium;
     }
-    
-
 }
