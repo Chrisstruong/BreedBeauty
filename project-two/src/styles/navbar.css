@@ -5,6 +5,8 @@ button {
 a {
     text-decoration: none;
     color: rgb(222, 222, 222);
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: rgb(3, 2, 3);
 }
 .full-nav {
     width: 100%;
@@ -17,6 +19,8 @@ a {
     border: 2px solid rgba(0, 0, 0, 0.12);
     border-radius: 5px;
     background-color: rgba(190, 44, 44, 0.315);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blueviolet;
 }
 
 .logo {
@@ -29,12 +33,11 @@ a {
 }
 
 .logo :hover {
-    color: rgb(0, 157, 255);
+    color: rgb(228, 4, 240);
 }
 
 .search-context {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 2px;
     margin-top: 5px;
@@ -46,6 +49,10 @@ form, input, #button-search {
 font-family: 'Yanone Kaffeesatz', sans-serif;
 padding: 10px;
 font-size: 25px;
+}
+
+#button-search :hover {
+    background-color: black;
 }
 
 
