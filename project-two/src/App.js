@@ -8,12 +8,13 @@ import DogList from './Components/DogList';
 
 
 function App() {
+  
   return (
   <>
        <Navbar />
     <main>
       <Routes>
-        <Route path="/" element={ <RandomDog /> } />
+        <Route path="/" element={ <RandomDog  />  } />
         <Route path="/list" element={<DogList />} />
         <Route path="/list/:nameDog" element={ <DogDetails /> } />
       </Routes>
