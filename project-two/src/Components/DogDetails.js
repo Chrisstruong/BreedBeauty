@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import '../styles/DogDetails.css'
 
 function DogDetails (props) {
     const [dogs, setDogs] = useState(null)
@@ -31,7 +32,7 @@ function DogDetails (props) {
 
 
     return (
-        <div>
+        <div className="dog-container">
             {dogs ? <>
                 <img className='photo-box' src={dogs[0]} alt=""/>
                 <img className='photo-box' src={dogs[1]} alt=""/>
