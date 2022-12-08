@@ -10,7 +10,7 @@ a {
     width: 100%;
     height: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     gap: 5px;
     padding-bottom: 5px;
@@ -41,21 +41,6 @@ a {
     color: aqua;
     font-size: 20px;
 }
-/* #button-random {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 40px;
-    background-color:rgba(13, 167, 233, 0);
-    padding: 10px;
-    border-radius: 8px;
-    margin: 5px;
-    color:rgb(2, 52, 52);
-    font-weight: 900px;
-    font-size:medium;
-    text-align: center;
-} */
 
 form, input, #button-search {
 font-family: 'Yanone Kaffeesatz', sans-serif;
