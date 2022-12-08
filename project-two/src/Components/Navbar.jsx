@@ -1,23 +1,21 @@
 import '../styles/navbar.css'
+import { Link } from 'react-router-dom'
 
 function Navbar () {
     return (
         <>     
          <div className="full-nav">
             <div className="logo">
-                <h1>Random Doge </h1>
-            </div>
-            <div className= "random">
-                <button id="button-random">Show Me Another</button>
+            <Link to = "./">Random Pup</Link>
             </div>
             <div className = "search-context">
-                <h4>Find a specific breed:</h4>
+                <h4>Search for a specific breed:</h4>
                 <div className = "search">
                     <form action="#">
                         <input type="text"
                         placeholder="French Bulldog"
                         name= "search"/>
-                        <button id="button-search">Enter</button>
+                        <button id="button-search">Go Doge</button>
                     </form>
                 </div>
             </div>

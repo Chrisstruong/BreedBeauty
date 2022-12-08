@@ -1,4 +1,7 @@
-import '../styles/DogList.css'
+import { useEffect, useState, useParams } from 'react'
+
+
+  
 
 function RandomDog (props) {
     return (

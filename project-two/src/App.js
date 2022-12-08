@@ -12,7 +12,6 @@ function App() {
   <>
        <Navbar />
     <main>
-      <DogList />
       <Routes>
         <Route path="/" element={ <RandomDog /> } />
         <Route path="/list" element={<DogList />} />
