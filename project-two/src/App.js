@@ -4,6 +4,7 @@ import BreedPhotos from './Components/BreedPhotos'
 import Navbar from './Components/Navbar'
 import RandomDog from './Components/RandomDog';
 import DogList from './Components/DogList';
+import ListOfAlpha from './Components/ListOfAlpha'
 
 
 
@@ -15,8 +16,9 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={ <RandomDog  />  } />
-        <Route path="/list" element={<DogList />} />
-        <Route path="/list/:nameDog" element={ <BreedPhotos /> } />
+        <Route path="/ListOfAlpha" element={ <ListOfAlpha /> }/>
+        <Route path="/ListOfAlpha/:Alpha" element={<DogList />} />
+        <Route path="/ListOfAlpha/:Alpha/:dogList/:nameDog" element={ <BreedPhotos /> } />
       </Routes>
     </main>
     <footer>
@@ -25,3 +27,5 @@ function App() {
   );
 }
 export default App;
+
+
