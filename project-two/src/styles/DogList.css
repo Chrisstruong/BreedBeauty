@@ -1,5 +1,6 @@
 li {
     display: flex;
+    flex-wrap: wrap;
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -19,6 +20,5 @@ flex-wrap: wrap;
 .dog-list-inner {
     width: 100%;
     display: flex;
-    font-size:;
 }
 

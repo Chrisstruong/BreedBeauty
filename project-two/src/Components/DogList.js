@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/DogList.css'
 
 function DogList (props) {
     const [dog, setDog] = useState(null)
