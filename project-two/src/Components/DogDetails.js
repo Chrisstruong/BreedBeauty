@@ -33,12 +33,13 @@ function DogDetails (props) {
 
     return (
         <div className="dog-container">
-            {dogs ? <>
+            <h1>DOGS BREED NAME SHOULD GO HERE</h1>
+            {dogs ? <div className="photo-box">  
                 <img className='photo-box' src={dogs[0]} alt=""/>
                 <img className='photo-box' src={dogs[1]} alt=""/>
                 <img className='photo-box' src={dogs[2]} alt=""/>
                 
-            </> : <p>Loading dog...</p>  }
+            </div> : <p>Loading dog...</p>  }
         </div>
     )
 
