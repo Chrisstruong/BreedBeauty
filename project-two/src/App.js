@@ -12,8 +12,8 @@ function App() {
   <>
     <header>
        <Navbar />
-       {/* <DogList />
-       <DogDetails /> */}
+       <DogList />
+       <DogDetails />
     </header>
     <main>
     <Routes>

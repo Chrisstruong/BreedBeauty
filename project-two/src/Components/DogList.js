@@ -8,7 +8,7 @@ function DogList (props) {
         <div> 
             {dogArray.map((elDog, idx) => (
                 <Link to = {`/list/${elDog}`} key={idx}>
-                    <div>
+                    <div className="dog-list">
                         <p>{elDog}</p>
                     </div>
                 </Link>
