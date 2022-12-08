@@ -1,20 +1,24 @@
-.dog-container{
+li {
     display: flex;
-    justify-content: center;
-    border-radius: 15px;
-}
-.photo-box{
-    border: 2px solid blue;
-    width: 100%;
-    display: flex;
-    border-radius: 15px;
-    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-img {
-    max-width: 90vw;
+a {
+    text-decoration: none;
+}
+
+.dog-list {
+text-decoration: none;
+display: flex;
+border: 2 px solid rgb(70, 155, 28);
+flex-wrap: wrap;
+}
+
+.dog-list-inner {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    display: flex;
 }
 
