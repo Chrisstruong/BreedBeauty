@@ -1,0 +1,13 @@
+.dog-container{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    gap: 5 px;
+}
+
+img {
+    max-width: 70vw;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(11, 11, 11, .09);
+}

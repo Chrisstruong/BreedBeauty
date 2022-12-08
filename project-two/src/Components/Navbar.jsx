@@ -5,7 +5,7 @@ function Navbar () {
         <>     
          <div className="full-nav">
             <div className="logo">
-                <h1>Need a Boost? </h1>
+                <h1>Random Doge </h1>
             </div>
             <div className= "random">
                 <button id="button-random">Show Me Another</button>
