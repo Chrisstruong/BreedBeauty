@@ -29,7 +29,7 @@ a {
 }
 
 .logo :hover {
-    color: red;
+    color: rgb(0, 157, 255);
 }
 
 .search-context {
@@ -38,8 +38,8 @@ a {
     align-items: center;
     padding: 2px;
     margin-top: 5px;
-    color: aqua;
-    font-size: 20px;
+    color: rgb(0, 157, 255);
+    font-size: 30px;
 }
 
 form, input, #button-search {

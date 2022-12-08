@@ -23,6 +23,12 @@ img {
     margin: 0 auto;
 }
 
+.breed-header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 #another {
     font-family: 'Fredoka One', cursive;
     font-size: 40px;

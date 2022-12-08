@@ -34,7 +34,7 @@ function RandomDog (props) {
                 <div className="photo-box">
                     {randomDogPic ? <>
                     <img src={ randomDogPic[randomNumberInRange(0,randomDogPic.length-1)] } alt="" />
-                    <button onClick={randomDogPic} id="another">Another!</button>
+                    <button onClick={fetchRandomDogPic} id="another">Another!</button>
                     
                     </> : <p>Loading random Pic of Breed....</p>}
                 </div>
