@@ -3,52 +3,66 @@ button {
 }
 
 a {
-        text-decoration: none;
-        color: rgb(222, 222, 222);
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: rgb(3, 2, 3);
 }
 .full-nav {
     width: 100%;
-    height: 30px;
+    height: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
     gap: 5px;
     padding-bottom: 5px;
     border: 2px solid rgba(0, 0, 0, 0.12);
     border-radius: 5px;
     background-color: rgba(190, 44, 44, 0.315);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blueviolet;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 50px;
+    word-spacing: .1em;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.logo :hover {
+    color: rgb(228, 4, 240);
 }
 
 .search-context {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 2px;
     margin-top: 5px;
-    color: aqua;
+    color: rgb(0, 157, 255);
+    font-size: 30px;
 }
-#button-random {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 40px;
-    background-color:rgba(13, 167, 233, 0);
-    padding: 10px;
-    border-radius: 8px;
-    margin: 5px;
-    color:rgb(2, 52, 52);
-    font-weight: 900px;
-    font-size:medium;
-    text-align: center;
+
+form, input, #button-search {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+padding: 10px;
+font-size: 25px;
+}
+
+#button-search :hover {
+    background-color: black;
 }
 
 
+@media (max-width: 800px){
 
+    .full-nav{
+    flex-direction: column;
+    }
+
+}
 
 
 @media (max-width: 375px){
@@ -57,22 +71,24 @@ a {
         margin: 2px;
         padding: 2px;
 }
-    .full-nav {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        padding-right: 2px;
-        margin-right: 5px;
-        border: 2px solid rgba(0, 0, 0, 0.12);
-        border-radius: 5px;
-        background-color: rgba(190, 44, 44, 0.315);
-    }
+.full-nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    background-color: rgba(190, 44, 44, 0.315);
+}
     
     .logo {
         display: flex;
         align-items: center;
+        font-size: 5px;
         color: rgb(38, 228, 228);
     }
     

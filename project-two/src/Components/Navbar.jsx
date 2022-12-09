@@ -9,14 +9,16 @@ function Navbar () {
             <Link to = "./">Random Pup</Link>
             </div>
             <div className = "search-context">
-                <h4>Search for a specific breed:</h4>
                 <div className = "search">
                     <form action="#">
                         <input type="text"
-                        placeholder="French Bulldog"
+                        placeholder="...search by breed"
                         name= "search"/>
                         <button id="button-search">Go Doge</button>
                     </form>
+                </div>
+                <div className="logo">
+                <Link to = "./ListOfAlpha">Breed List</Link>
                 </div>
             </div>
         </div>
