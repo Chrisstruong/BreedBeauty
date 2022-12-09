@@ -13,8 +13,8 @@ function RandomDog(props) {
     function randomNumberInRange(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
-    let storeName = dogArray[Math.floor(Math.random() * (dogArray.length - 0 + 1) + 0)]
-    
+    // let storeName = dogArray[Math.floor(Math.random() * (dogArray.length - 0 + 1) + 0)]
+    let storeName = dogArray[randomNumberInRange(0, dogArray.length - 1)]
     async function fetchRandomDogPic() {
         try {
             const response = await fetch(`https://dog.ceo/api/breed/${storeName}/images`)
