@@ -31,7 +31,7 @@ function BreedPhotos (props) {
         fetchDogList()
     }, [])
 
-
+    //testing
     return (
         <div className="dog-container">
             <div className ="breed-header">
@@ -49,6 +49,6 @@ function BreedPhotos (props) {
     )
 
 }
-// 
+
 
 export default BreedPhotos
