@@ -14,7 +14,7 @@ function Navbar (props) {
                    {props.searchbar}
                 </div>
                 <div className="logo">
-                <Link to = "./ListOfAlpha">Breed List</Link>
+                <Link to = "./ListOfDogs">Breed List</Link>
                 </div>
             </div>
         </div>
