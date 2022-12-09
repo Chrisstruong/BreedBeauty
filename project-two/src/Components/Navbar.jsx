@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Navbar (props) {
     return (
         <>     
-         <div className="full-nav">
+         <div aria-label="Main Navigation" className="full-nav">
             <div className="logo">
             <Link to = "./">Random Pup</Link>
             </div>

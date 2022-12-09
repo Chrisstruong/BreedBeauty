@@ -15,19 +15,22 @@ function Search (props) {
 
     const filterDogs = (dogArray, query) => {
         if (!query) {
+            return []
       }
-       return dogArray.filter((dog) => {
+       return (dogArray.filter((dog) => {
            const dogName = dog.toLowerCase();
            console.log("DOg NEM", dogName);
-           return dogName.includes(query);
-           })
+           let filtered = dogName.includes(query);
+           let firstLetter = dogName[0];
+           return (filtered, firstLetter)
+           }))
    };
     const filtered = filterDogs(dogArray, query);
     return(
         <>
        {/* <h1> {props.dogArray}</h1> */}
         <div className="search-context">
-        <form action='/' method="get">
+        <form action='#' method="get">
             <label htmlFor="header-search">
             <span className="hide">Search Breed Here</span>
             </label>   
@@ -40,6 +43,10 @@ function Search (props) {
                 <button type="submit">Go Doge</button>
         </form>
         </div>
+
+        <>
+                {/* <Link to={`/ListOfAlpha/${dogA[0]}/${dog}`}></Link> */}
+                </>
         <ul>
             {filtered.map((dog, idx) => (
                 <>
