@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { FaDog } from "react-icons/fa";
 import '../styles/Search.css'
 
 
@@ -13,15 +15,16 @@ const Search = (props) => {
 
     const onSearch = (searchItem) => {
         setSearchValue(searchItem);
+
         console.log('search', searchItem)
-    };
+        }
 
     return(
         <div className="search-context">
             <div className="search-context-inner">
                 <input type="text" value={searchValue} onChange={onChange} 
-                     id="search" placeholder="Search by breed.."/>
-                <button onClick = {() => onSearch(searchValue)} id="search"> Go Doge
+                     id="search" placeholder={props.placeHolder}/>
+                <button onClick = {() => onSearch({dogList})} id="search"> {<FaDog />}
                 </button>
             </div>
             <div className="drop-down-list">
@@ -29,10 +32,9 @@ const Search = (props) => {
                     const searchItem = searchValue.toLowerCase();
                     const fullName = dog.toLowerCase();
                     console.log("SEARCH ITEM", searchItem)
-                    console.log("fullNameITEM", fullName)
                   return (searchItem && fullName.startsWith(searchItem) && fullName !== searchItem);
                 })
-                .slice(0, 4)
+                .slice(0, 8)
                 .map((dog, idx) => (
                 <div onClick={() => onSearch(dog)} className="drop-down-row"
                 key={idx}>{ dog }</div>))}

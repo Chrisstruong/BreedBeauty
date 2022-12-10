@@ -14,7 +14,8 @@ input {
 }
 
 .search-context {
-    background-color: rgba(190, 44, 44, 0.315);
+    background-image: linear-gradient(90deg, #410076, #8820dd);
+    /* background-color: rgba(190, 44, 44, 0.315); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +57,7 @@ background-color: black;
 #search {
     font-size: 30px;
     padding: 10px;
-    margin: 20px;
+    margin: 0px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #search:hover {

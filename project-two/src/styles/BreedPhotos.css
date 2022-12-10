@@ -5,7 +5,10 @@ body {
 }
 
 h1 {
-    letter-spacing: .1rem;
+    font-size: 50px;
+    word-spacing: .1em;
+    margin: 10px;
+    padding: 0;
 }
 
 .dog-container{
@@ -35,8 +38,14 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 40px;
     font-weight: 900px;
-    background-color: rgba(164, 164, 242, 0.572);
+    background-color: rgba(0, 0, 0, 0.572);
+    color: rgb(0, 157, 255);
     border-radius: 4px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
+}
+
+#more:hover {
+    color: rgb(0, 157, 255);
+    background-color: rgb(12, 12, 12);
+
 }
