@@ -30,9 +30,9 @@ const Search = (props) => {
             <div className="drop-down-list">
                 {dogList.filter((dog) => {
                     const searchItem = searchValue.toLowerCase();
-                    const fullName = dog.toLowerCase();
+                    const dogName = dog.toLowerCase();
                     console.log("SEARCH ITEM", searchItem)
-                  return (searchItem && fullName.startsWith(searchItem) && fullName !== searchItem);
+                  return (searchItem && dogName.startsWith(searchItem) && dogName !== searchItem);
                 })
                 .slice(0, 8)
                 .map((dog, idx) => (
