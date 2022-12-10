@@ -1,6 +1,6 @@
 import './styles/App.css';
+import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-
 import BreedPhotos from './Components/BreedPhotos'
 import Navbar from './Components/Navbar'
 import RandomDog from './Components/RandomDog';
@@ -23,7 +23,6 @@ function App() {
         <Route path="/" element={ <RandomDog /> }  /> 
         <Route path="/ListOfDogs" element={ <DogList dogArray={dogArray} /> }/>
         <Route path="/ListOfDogs/:nameDog" element={ <BreedPhotos dogArray={dogArray} /> } />
-        <Route path="/ListOfDogs/:nameDog" element= {<Search />} />
       </Routes>
     </main>
     <footer>

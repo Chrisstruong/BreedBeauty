@@ -44,6 +44,8 @@ p {
 
 #another {
     padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     max-width: 40vw;
     font-family: 'Fredoka One', cursive;
     font-size: 40px;
@@ -52,9 +54,12 @@ p {
     color: rgb(0, 157, 255);
     border-radius: 4px;
     margin: 0 auto; 
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 button, #another:hover {
+    cursor: pointer;
     color: rgb(0, 157, 255);
     background-color: rgb(12, 12, 12);
 }

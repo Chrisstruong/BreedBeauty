@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaDog } from "react-icons/fa";
 import '../styles/Search.css'
 
@@ -9,14 +9,15 @@ const Search = (props) => {
     const [searchValue, setSearchValue] = useState('');
 
     let dogList = props.dogArray;
+
     const onChange = (event) => {
         setSearchValue(event.target.value)
         }
 
     const onSearch = (searchItem) => {
         setSearchValue(searchItem);
-
-        console.log('search', searchItem)
+        // console.log("searchValue:",searchValue)
+        // console.log("setSearchValue:",setSearchValue)
         }
 
     return(
@@ -30,9 +31,8 @@ const Search = (props) => {
             <div className="drop-down-list">
                 {dogList.filter((dog) => {
                     const searchItem = searchValue.toLowerCase();
-                    const fullName = dog.toLowerCase();
-                    console.log("SEARCH ITEM", searchItem)
-                  return (searchItem && fullName.startsWith(searchItem) && fullName !== searchItem);
+                    const dogName = dog.toLowerCase();
+                  return (searchItem && dogName.startsWith(searchItem) && dogName !== searchItem);
                 })
                 .slice(0, 8)
                 .map((dog, idx) => (
