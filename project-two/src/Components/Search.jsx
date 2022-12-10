@@ -6,10 +6,9 @@ const Search = (props) => {
 
     const [searchValue, setSearchValue] = useState('');
 
-    const dogList = props.dogArray;
+    let dogList = props.dogArray;
     const onChange = (event) => {
         setSearchValue(event.target.value)
-        console.log('HI', setSearchValue);
         }
 
     const onSearch = (searchItem) => {
@@ -28,8 +27,10 @@ const Search = (props) => {
             <div className="drop-down-list">
                 {dogList.filter((dog) => {
                     const searchItem = searchValue.toLowerCase();
+                    const fullName = dog.toLowerCase();
                     console.log("SEARCH ITEM", searchItem)
-                  return (searchItem)
+                    console.log("fullNameITEM", fullName)
+                  return (searchItem && fullName.startsWith(searchItem) && fullName !== searchItem);
                 })
                 .slice(0, 4)
                 .map((dog, idx) => (
