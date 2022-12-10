@@ -23,16 +23,21 @@ a {
     -webkit-text-stroke-color: blueviolet;
 }
 
-.logo {
+.logo, .breed-list {
     display: flex;
     align-items: center;
-    font-size: 80px;
+    font-size: 85px;
     word-spacing: .1em;
-    margin: 20px;
+    margin: 0px;
 }
 
-.logo :hover {
-    color: rgb(228, 4, 240);
+.breed-list {
+    font-size: 40px;
+    margin: 0;
+}
+
+.logo :hover, .breed-list :hover {
+    color: rgb(3, 215, 253);
 }
 
 .search-context {
