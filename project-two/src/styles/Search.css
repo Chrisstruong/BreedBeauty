@@ -1,3 +1,8 @@
+input {
+    width: 220px;
+}
+
+
 .hide {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -9,20 +14,43 @@
 }
 
 .search-context {
+    background-color: rgba(190, 44, 44, 0.315);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 2px;
     margin-top: 5px;
     color: rgb(0, 157, 255);
-    font-size: 30px;
+    font-size: 10px;
 }
 
-form, input, #button-search {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-padding: 10px;
-font-size: 25px;
+.drop-down-list{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
 }
 
-#button-search :hover {
-    background-color: black;
+.drop-down-list:empty{
+border: none;
+}
+
+.drop-down-row {
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+}
+
+.search-inner {
+    display: flex;
+}
+
+#search {
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#search:hover {
+    background-color: rgb(155, 170, 227);
 }

@@ -1,62 +1,44 @@
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import '../styles/Search.css'
 
 
+const Search = (props) => {
 
-function Search (props) {
+    const [searchValue, setSearchValue] = useState('');
 
- const { Alpha } = useParams()
+    const dogList = props.dogArray;
+    const onChange = (event) => {
+        setSearchValue(event.target.value)
+        console.log('HI', setSearchValue);
+        }
 
-    const dogArray = props.dogArray;
-    const dogList = props.dogList;;
-    const { search } = window.location;
-    const query = new URLSearchParams(search).get('s')
+    const onSearch = (searchItem) => {
+        setSearchValue(searchItem);
+        console.log('search', searchItem)
+    };
 
-    const filterDogs = (dogArray, query) => {
-        if (!query) {
-            return []
-      }
-       return (dogArray.filter((dog) => {
-           const dogName = dog.toLowerCase();
-           console.log("DOg NEM", dogName);
-           let filtered = dogName.includes(query);
-           let firstLetter = dogName[0];
-           return (filtered, firstLetter)
-           }))
-   };
-    const filtered = filterDogs(dogArray, query);
     return(
-        <>
-       {/* <h1> {props.dogArray}</h1> */}
         <div className="search-context">
-        <form action='#' method="get">
-            <label htmlFor="header-search">
-            <span className="hide">Search Breed Here</span>
-            </label>   
-            <input
-                type="text"
-                id="search"
-                placeholder="Search Breed Here"
-                name="s"
-                />
-                <button type="submit">Go Doge</button>
-        </form>
+            <div className="search-context-inner">
+                <input type="text" value={searchValue} onChange={onChange} 
+                     id="search" placeholder="Search by breed.."/>
+                <button onClick = {() => onSearch(searchValue)} id="search"> Go Doge
+                </button>
+            </div>
+            <div className="drop-down-list">
+                {dogList.filter((dog) => {
+                    const searchItem = searchValue.toLowerCase();
+                    console.log("SEARCH ITEM", searchItem)
+                  return (searchItem)
+                })
+                .slice(0, 4)
+                .map((dog, idx) => (
+                <div onClick={() => onSearch(dog)} className="drop-down-row"
+                key={idx}>{ dog }</div>))}
+            </div>
         </div>
+    );
 
-        <>
-                {/* <Link to={`/ListOfAlpha/${dogA[0]}/${dog}`}></Link> */}
-                </>
-        <ul>
-            {filtered.map((dog, idx) => (
-                <>
-                <Link to={`/ListOfAlpha/${dog[0]}/${dog}`}></Link>
-                </>
-            ))}
-        </ul>
-        </>
-    )
-
-}
+};
 
 export default Search

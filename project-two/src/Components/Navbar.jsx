@@ -9,14 +9,9 @@ function Navbar (props) {
             <div className="logo">
             <Link to = "./">Random Pup</Link>
             </div>
-            <div className = "search-context">
-                <div className = "search-context">
-                   {props.searchbar}
-                </div>
                 <div className="logo">
                 <Link to = "./ListOfDogs">Breed List</Link>
                 </div>
-            </div>
         </div>
         </>
     )
