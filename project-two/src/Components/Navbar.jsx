@@ -11,7 +11,7 @@ function Navbar (props) {
             <div className="logo">
             <Link to = "./">{ <GiDogHouse/> }</Link>
             </div>
-                <div className="logo">
+                <div className="breed-list">
                 <Link to = "./ListOfDogs">Breed List { <TbClipboardList/> }</Link>
                 </div>
         </div>
