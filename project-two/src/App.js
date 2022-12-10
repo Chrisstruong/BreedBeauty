@@ -17,7 +17,7 @@ function App() {
   return (
   <>
        < Navbar />
-       <Search dogArray={dogArray}/> 
+       <Search dogArray={dogArray} placeHolder="Search By Breed.."/> 
     <main>
       <Routes>
         <Route path="/" element={ <RandomDog /> }  /> 

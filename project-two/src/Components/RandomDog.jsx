@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import '../styles/RandomDog.css'
 
 
@@ -38,7 +38,7 @@ function RandomDog(props) {
                         <p>{breedName.charAt(0).toUpperCase() + breedName.slice(1)}</p>
                         <img src={randomDogPic[randomNumberInRange(0, randomDogPic.length - 1)]} alt="" />
                         
-                        <button onClick={fetchRandomDogPic} id="another">Another!</button>
+                        <button onClick={fetchRandomDogPic} id="another">{ <GiPerspectiveDiceSixFacesRandom/> } </button>
                     </> : <p>Loading random Pic of Breed....</p>}
                 </div>
             </div>
