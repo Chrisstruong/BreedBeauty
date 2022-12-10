@@ -6,7 +6,6 @@ import '../styles/DogList.css'
 function DogList(props) {
     const [dog, setDog] = useState(null)
     const { Alpha } = useParams()
- 
     return (
         <>
             <div className="dog-list">
