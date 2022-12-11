@@ -19,9 +19,8 @@ const dogArray = ["affenpinscher", "african", "airedale", "akita", "appenzeller"
 function App() {
 
   return (
-    <>
+    <div className="full">
       < Navbar />
-
       {/* <Search dogArray={dogArray} placeHolder="Search By Breed.."/>  */}
       <TestSearchBar dogArray={dogArray} placeHolder="Search By Breed.." />
       <main>
@@ -31,7 +30,13 @@ function App() {
           <Route path="/ListOfDogs/:nameDog" element={<BreedPhotos dogArray={dogArray} />} />
         </Routes>
       </main>
-    </>
+      <div className ="footer">
+         <a href="https://www.adoptapet.com/s/dog-rescues" target="_blank">Find A Dog Rescue Near You --></a>
+         <div>
+          <h6>Created by Zach Sykes & Minh Triet Truong</h6>
+         </div>
+      </div>
+    </div>
   );
 }
 export default App;
