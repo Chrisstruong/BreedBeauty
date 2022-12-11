@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
+import { GiLunarModule, GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import '../styles/BreedPhotos.css'
 
 function BreedPhotos () {
@@ -13,7 +13,7 @@ function BreedPhotos () {
 
     async function fetchDogList() {
         try {
-            const response = await fetch(`https://dog.ceo/api/breed/${nameDog}/images`)
+            const response = await fetch(`https://dog.ceo/api/breed/${nameDog.toLowerCase()}/images`)
             const dogNewData = await response.json()
             console.log(`Dognewdata :${dogNewData}`)
 
@@ -22,7 +22,7 @@ function BreedPhotos () {
             console.log(err)
         }
     }
-
+ 
 
     useEffect(() => {
         fetchDogList()
@@ -35,7 +35,7 @@ function BreedPhotos () {
                 <h1>{nameDog.charAt(0).toUpperCase() + nameDog.slice(1)}</h1>
             </div>
             {dogs ? 
-                <div className="photo-box-breed">  
+                <div className="photo-box-breed" onChange={fetchDogList}>  
                     <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
                     <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
                     <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
@@ -49,3 +49,5 @@ function BreedPhotos () {
 
 
 export default BreedPhotos
+
+
