@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaDog } from "react-icons/fa";
 import '../styles/Search.css'
+import SearchButton from './SearchButton';
 
 
 const Search = (props) => {
@@ -16,6 +17,7 @@ const Search = (props) => {
 
     const onSearch = (searchItem) => {
         setSearchValue(searchItem);
+        
         // console.log("searchValue:",searchValue)
         // console.log("setSearchValue:",setSearchValue)
         }
@@ -28,7 +30,7 @@ const Search = (props) => {
                 <input type="text" value={searchValue} onChange={onChange} 
                      id="search" placeholder={props.placeHolder}/>
                 <Link to={`/ListOfDogs/${searchValue}`}>
-                <button onClick = {()=>{setSearchValue(searchValue)}} id="search"> {<FaDog />}
+                <button onClick = {<SearchButton/>} id="search"> {<FaDog />}
                 </button>
                 </Link>
             </div>
