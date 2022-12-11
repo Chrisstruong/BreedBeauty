@@ -6,6 +6,11 @@ li {
     font-size: 20px;
 }
 
+li:hover {
+    color: rgb(3, 215, 253);
+
+}
+
 a {
     text-decoration: none;
 }
