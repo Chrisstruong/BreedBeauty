@@ -36,9 +36,10 @@ const Search = (props) => {
                 })
                 .slice(0, 8)
                 .map((dog, idx) => (
-                <div onClick={() => onSearch(dog)} className="drop-down-row"
+                <div onClick={() => onSearch(dog.toUpperCase())} className="drop-down-row"
                 key={idx}>{ dog }</div>))}
             </div>
+            {/* elDog.charAt(0).toUpperCase() + elDog.slice(1)}</li> */}
         </div>
     );
 
