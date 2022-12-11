@@ -32,7 +32,7 @@ function App() {
       </main>
       <div className ="footer">
         <div className="link">
-         <a href="https://www.adoptapet.com/s/dog-rescues" target="_blank">Click Here to Find a Dog Rescue Near You --> </a>
+         <a id="smaller" href="https://www.adoptapet.com/s/dog-rescues" target="_blank">Click Here to Find a Dog Rescue Near You --> </a>
          </div>
          <div className="author">
           <h5>Created by Zach Sykes & Minh Triet Truong</h5>
