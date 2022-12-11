@@ -32,7 +32,7 @@ function BreedPhotos () {
     return (
         <div className="dog-container">
             <div className ="breed-header">
-                <h1>{nameDog.charAt(0).toUpperCase() + nameDog.slice(1)}</h1>
+                <h1>{nameDog.charAt(0).toUpperCase() + nameDog.slice(1).toLowerCase()}</h1>
             </div>
             {dogs ? 
                 <div className="photo-box-breed" onChange={fetchDogList}>  
