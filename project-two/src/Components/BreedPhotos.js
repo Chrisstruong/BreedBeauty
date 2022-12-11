@@ -15,7 +15,6 @@ function BreedPhotos () {
         try {
             const response = await fetch(`https://dog.ceo/api/breed/${nameDog}/images`)
             const dogNewData = await response.json()
-            console.log(`Dognewdata :${dogNewData}`)
 
             setDogs(dogNewData.message)
         } catch (err) {

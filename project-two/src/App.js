@@ -26,13 +26,11 @@ function App() {
       <TestSearchBar dogArray={dogArray} placeHolder="Search By Breed.." />
       <main>
         <Routes>
-          <Route path="/" element={<RandomDog />} />
-          <Route path="/ListOfDogs" element={<DogList dogArray={dogArray} />} />
+          <Route exact path="/" element={<RandomDog />} />
+          <Route exact path="/ListOfDogs" element={<DogList dogArray={dogArray} />} />
           <Route path="/ListOfDogs/:nameDog" element={<BreedPhotos dogArray={dogArray} />} />
         </Routes>
       </main>
-      <footer>
-      </footer>
     </>
   );
 }
