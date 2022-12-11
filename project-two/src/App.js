@@ -19,21 +19,26 @@ const dogArray = ["affenpinscher", "african", "airedale", "akita", "appenzeller"
 function App() {
 
   return (
-    <>
+    <div className="full">
       < Navbar />
-
       {/* <Search dogArray={dogArray} placeHolder="Search By Breed.."/>  */}
       <TestSearchBar dogArray={dogArray} placeHolder="Search By Breed.." />
       <main>
         <Routes>
-          <Route path="/" element={<RandomDog />} />
-          <Route path="/ListOfDogs" element={<DogList dogArray={dogArray} />} />
+          <Route exact path="/" element={<RandomDog />} />
+          <Route exact path="/ListOfDogs" element={<DogList dogArray={dogArray} />} />
           <Route path="/ListOfDogs/:nameDog" element={<BreedPhotos dogArray={dogArray} />} />
         </Routes>
       </main>
-      <footer>
-      </footer>
-    </>
+      <div className ="footer">
+        <div className="link">
+         <a href="https://www.adoptapet.com/s/dog-rescues" target="_blank">Click Here to Find a Dog Rescue Near You --> </a>
+         </div>
+         <div className="author">
+          <h5>Created by Zach Sykes & Minh Triet Truong</h5>
+         </div>
+      </div>
+    </div>
   );
 }
 export default App;

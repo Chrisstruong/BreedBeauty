@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState,} from 'react'
 import { Link } from 'react-router-dom'
 import { FaDog } from "react-icons/fa";
 import '../styles/Search.css'
@@ -7,6 +7,8 @@ import '../styles/Search.css'
 const Search = (props) => {
 
     const [searchValue, setSearchValue] = useState('');
+    
+
 
     let dogList = props.dogArray;
 

@@ -51,3 +51,16 @@ h1 {
     background-color: rgb(12, 12, 12);
 
 }
+
+@media (max-width: 820px){
+
+h1 {
+    color: rgb(244, 245, 245);
+    font-size: 20px;
+    word-spacing: .1em;
+    margin: 10px;
+    font-size: 40px;
+    padding: 0;
+}
+
+    }
