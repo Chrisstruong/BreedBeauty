@@ -1,12 +1,7 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import '../styles/DogList.css'
 
 function DogList(props) {
-    const [dog, setDog] = useState(null)
-    const { Alpha } = useParams()
- 
     return (
         <>
             <div className="dog-list">

@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import '../styles/BreedPhotos.css'
 
-function BreedPhotos (props) {
+function BreedPhotos () {
     const [dogs, setDogs] = useState(null)
     let { nameDog } = useParams ()
 
@@ -40,7 +41,7 @@ function BreedPhotos (props) {
                     <img className='photo-individual' src={dogs[randomNumberInRange(0,dogs.length-1)]} alt=""/>
                 </div> 
             : <p>Loading dog...</p>  }
-            <button onClick={fetchDogList} id="more">More!</button>
+            <button onClick={fetchDogList} id="more">{ <GiPerspectiveDiceSixFacesRandom/> }</button>
         </div>
     )
 
