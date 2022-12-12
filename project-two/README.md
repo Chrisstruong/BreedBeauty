@@ -1,17 +1,26 @@
-The will be a react app intended to allow the user to search for music artist information including bio, songs, and albums.
+Sometimes folks just want to see photos of cute dogs. Our app's mission is to solve the problem of by allowing the user to randomly generate a photo of a dog from a group of over  1000 dog photos. 
 
-WireFrame: https://www.figma.com/file/p2TOTJ4kkc0UDh6pKoesFq/Project-2-%2F-Music-Artist-Info-App?node-id=5%3A10&t=uEwaEA9Q68oppdZl-1
+WireFrame & Component Hierarchy: https://tinyurl.com/zb3psbv3
+
 
 
 User Stories:
 
-The user opens our app wanting to learn about a specific music artist. The user is able to search by artist. When they search for the artist they can then select the artist out of a list. Then they are taken to a page where they can select from learning about their bio or looking at the discography. Also there could be a randomly selected artist or album of the day feature.
+The user will open our app with the intention of seeing a random photo of a dog. It populates a random photo on the screen. The user can then press the randomize button in order to generate another random dog photo. There is also functionality to look up photos by the specific breed. The user can browse a list of these breeds or search for specific breeds using the search bar. There is a link at the bottom of the app for the user to seek out information about adopting a dog. 
 
-Stretch Goal: Connection to spotify or some other sort of streaming service to listen to the music??
+Planned Future Features: 
+1. Integrate the ability to allow the user to look up where to adopt dogs near their location. 
+2. Add functionality to search by sub breed (ie. Bulldog ---> French Bulldog).
 
-API: https://musicbrainz.org/ws/2/.
+API: https://dog.ceo/dog-api/
 
-Component Hierarchy: https://www.figma.com/file/p2TOTJ4kkc0UDh6pKoesFq/Project-2-%2F-Music-Artist-Info-App?node-id=11%3A2&t=fq43ZRCkK6Z9HtP3-0
+Technologies Used: This is a React application. CSS Flex-Box was used to build the UI.
+
+Contribution Guidelines: 
+Please get in touch with any suggestions about suggested improvement our found bugs. Thank You! 
+
+Created by Zach Sykes and Minh Triet Truong
+
 
 
 

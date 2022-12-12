@@ -63,4 +63,9 @@ h1 {
     padding: 0;
 }
 
+.photo-individual {
+    max-width: 90vw;
+    max-height: 60vw;
+}
+
     }
