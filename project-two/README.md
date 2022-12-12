@@ -21,7 +21,7 @@ Please get in touch with any suggestions about suggested improvement our found b
 
 Created by Zach Sykes and Minh Triet Truong
 
-![homepage screenshot](/Screen%20Shot%202022-12-12%20at%206.12.06%20AM.png)
+![homepage screenshot](Screen%20Shot%202022-12-12%20at%206.12.06%20AM.png)
 
 
 
