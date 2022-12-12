@@ -7,6 +7,12 @@ a {
     color: rgb(254, 254, 254);
 }
 
+form, input, #button-search {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 10px;
+    font-size: 25px;
+    }
+
 .link {
     color: black;
 }
@@ -45,12 +51,6 @@ a {
     margin-top: 5px;
     color: rgb(0, 157, 255);
     font-size: 30px;
-}
-
-form, input, #button-search {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-padding: 10px;
-font-size: 25px;
 }
 
 #button-search :hover {

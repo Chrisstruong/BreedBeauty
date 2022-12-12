@@ -15,7 +15,6 @@ input {
 
 .search-context {
     background-image: linear-gradient(90deg, #410076, #8820dd);
-    /* background-color: rgba(190, 44, 44, 0.315); */
     display: flex;
     flex-direction: column;
     justify-content: center;

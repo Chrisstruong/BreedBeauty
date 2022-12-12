@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import '../styles/RandomDog.css'
 
-
-
+//This generates a random dog photo pulled from the entire list of dog photos. 
 
 function RandomDog(props) {
     const [randomDogPic, setRandomDogPic] = useState(null)
@@ -13,7 +12,6 @@ function RandomDog(props) {
     function randomNumberInRange(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
-    // let storeName = dogArray[Math.floor(Math.random() * (dogArray.length - 0 + 1) + 0)]
     let storeName = dogArray[randomNumberInRange(0, dogArray.length - 1)]
     async function fetchRandomDogPic() {
         try {
@@ -36,8 +34,7 @@ function RandomDog(props) {
                 <div className="photo-box">
                     {randomDogPic ? <>
                         <p>{breedName.charAt(0).toUpperCase() + breedName.slice(1)}</p>
-                        <img src={randomDogPic[randomNumberInRange(0, randomDogPic.length - 1)]} alt="" />
-                        
+                        <img src={randomDogPic[randomNumberInRange(0, randomDogPic.length - 1)]} alt="" />  
                         <button onClick={fetchRandomDogPic} id="another">{ <GiPerspectiveDiceSixFacesRandom/> } </button>
                     </> : <p>Loading random Pic of Breed....</p>}
                 </div>

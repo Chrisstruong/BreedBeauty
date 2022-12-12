@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../styles/DogList.css'
 
+//Generates a list of links to each dog breed. 
+
 function DogList(props) {
     return (
         <>
