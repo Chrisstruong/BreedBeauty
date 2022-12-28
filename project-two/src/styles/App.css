@@ -65,7 +65,7 @@ main {
 }
 
 .footer{
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-evenly;
     left: 0;
