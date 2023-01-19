@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import '../styles/BreedPhotos.css'
 
-//This function pulls 3 random photos of a specific dog breed. 
+//This function pulls 3 random photos of a specific dog breed..
 
 function BreedPhotos () {
     const [dogs, setDogs] = useState(null)
